@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-weight: 600;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiase;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  webkit-tap-highlight-color: transparent;
+  font-family: 'Open Sans', sans-serif; }
+
+.layout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; }
+  .layout__navbar {
+    height: 56px; }
+  .layout__content {
+    height: 400px; }
+    .layout__content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.navbar {
+  background: white;
+  position: relative; }
+  .navbar::after {
+    content: "";
+    width: 100%;
+    box-shadow: inset 0px 4px 8px -3px rgba(17, 17, 17, 0.2);
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .navbar a {
+    color: ghostwhite; }
+  .navbar__logo {
+    transform: translateX(-65%);
+    height: 24px;
+    width: 100px;
+    object-fit: contain; }
+  .navbar__profile {
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .navbar__menu {
+    color: #A0A0A0;
+    font-size: 18px; }
+  .navbar__search {
+    display: flex; }
+  .navbar__actions {
+    transform: translateX(35%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px; }
+    .navbar__actions a {
+      color: #A0A0A0;
+      font-size: 18px; }
+
+.search {
+  height: 32px;
+  width: 50%; }
+  .search__input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-right: none;
+    box-shadow: inset 0 1px 2px #eee;
+    padding: 4px 12px;
+    border-radius: 2px 0 0 2px;
+    border-color: rgba(0, 13, 255, 0.233); }
+    .search__input input {
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      line-height: 24px;
+      margin-left: 4px;
+      outline: none; }
+  .search__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65px;
+    background: #f8f8f8;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box; }
+    .search__icon i {
+      color: #A0A0A0;
+      font-size: 18px;
+      font-size: 16px; }

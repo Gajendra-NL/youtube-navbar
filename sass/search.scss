@@ -1,0 +1,44 @@
+$--ytd-searchbox-legacy-border-shadow-color: #eee;
+$--ytd-searchbox-legacy-border-color: #ccc;
+$--ytd-seachbox-background: white;
+
+$youtube-button: #f8f8f8;
+$youtube-button-border: #D3D3D3;
+$--ytd-seachbox-border-focus-color: rgba(0, 13, 255, 0.233);
+
+.search {
+  height: 32px;
+  width: 50%;
+  &__input {
+    width: 100%;
+    background-color: $--ytd-seachbox-background;
+    border: 1px solid $--ytd-searchbox-legacy-border-color;
+    border-right: none;
+    box-shadow: inset 0 1px 2px $--ytd-searchbox-legacy-border-shadow-color;
+    padding: 4px 12px;
+    border-radius: 2px 0 0 2px;
+    border-color: $--ytd-seachbox-border-focus-color;
+    input {
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      line-height: 24px;
+      margin-left: 4px;
+      outline: none;
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65px;
+    background: $youtube-button;
+    border: 1px solid $youtube-button-border;
+    box-sizing: border-box;
+    i {
+      @include action;
+      font-size: 16px;
+    }
+  }
+}
